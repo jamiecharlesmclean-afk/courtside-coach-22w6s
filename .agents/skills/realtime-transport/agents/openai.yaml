@@ -1,0 +1,4 @@
+interface:
+  display_name: "Realtime Transport"
+  short_description: "Build fast shared WebSocket live-query transports."
+  default_prompt: "Use this skill to optimize a Vibes realtime/WebSocket transport for shared sockets, batched subscriptions, deltas, resume, caps, and metrics."

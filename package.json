@@ -1,0 +1,47 @@
+{
+  "name": "court-side-coach",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web",
+    "preview": "bash scripts/start-expo-preview.sh",
+    "build": "expo export --platform web --output-dir dist",
+    "typecheck": "bun scripts/gen-route-types.cjs && node scripts/check-routes.mjs && tsc --noEmit",
+    "test": "bun test",
+    "check": "bash scripts/check.sh"
+  },
+  "omg": {
+    "clientBuild": "prebuilt"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@omg-dev/schema": "^0.4.45",
+    "@omg-dev/sdk": "^0.4.63",
+    "@omg-dev/server": "^0.4.45",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.24",
+    "expo-document-picker": "~57.0.3",
+    "expo-glass-effect": "~57.0.3",
+    "expo-image-picker": "~57.0.20",
+    "expo-router": "~57.0.22",
+    "expo-status-bar": "~57.0.1",
+    "lucide-react-native": "^1.47.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "~0.21.0"
+  },
+  "devDependencies": {
+    "@omg-dev/vite-plugin": "^0.4.45",
+    "@types/bun": "^1.4.4",
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.4"
+  }
+}

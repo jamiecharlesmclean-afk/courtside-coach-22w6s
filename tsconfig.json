@@ -1,0 +1,26 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "server/**",
+    "functions/**",
+    "vite.config.ts",
+    "src/App.tsx",
+    "src/main.tsx",
+    "src/routes/**",
+    "src/routeTree.gen.ts",
+    "src/components/ui/**",
+    "src/lib/utils.ts",
+    "src/lib/tasks.ts",
+    "src/db.generated.ts",
+    "src/db.drizzle.ts"
+  ]
+}
